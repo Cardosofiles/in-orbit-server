@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch --env-file .env src/routes/server.ts",
+    "dev": "tsx watch --env-file .env src/server/app.ts",
     "seed": "tsx --env-file .env src/db/seed.ts"
   },
   "keywords": [],
@@ -19,6 +19,7 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "@fastify/cors": "^10.0.2",
     "@paralleldrive/cuid2": "^2.2.2",
     "dayjs": "^1.11.13",
     "drizzle-orm": "^0.39.3",
