@@ -8,7 +8,7 @@ export const getWeekSummaryRoute: FastifyPluginAsyncZod = async app => {
     '/summary',
     {
       schema: {
-        tags: ['goals'],
+        tags: ['goal'],
         description: 'Get week summary',
         response: {
           200: z.object({
